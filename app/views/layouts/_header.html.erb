@@ -1,0 +1,14 @@
+    <!-- nav navbar-fixed-top navbar-inverse это все для фреймворка bootstrap, стилизация  -->
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <%= link_to "MoscowDears", root_path, id: "logo" %>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home",   root_path %></li>
+            <!-- функция link_to принимает текст отображения ссылки и вторым агрументом самму ссылку, 3ий аргумент это хэш опций-->
+            <li><%= link_to "Help",   help_path %></li>
+            <li><%= link_to "Log in", '#' %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
